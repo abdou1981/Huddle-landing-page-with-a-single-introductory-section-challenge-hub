@@ -1,0 +1,120 @@
+/* start global rules  */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  background-color: var(--Violet);
+}
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+/* end global rules  */
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+main .logo {
+  width: 160px;
+  margin-bottom: 50px;
+}
+main .logo img {
+  width: 100%;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+.card .image {
+  width: 55%;
+}
+.card img {
+  width: 100%;
+}
+.card .info {
+  width: 40%;
+  margin-top: 40px;
+}
+.card .info h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-bottom: 30px;
+}
+.card .info p {
+  color: #ffffffc7;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.card .info button {
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 12px 35px;
+  color: #000000ab;
+  cursor: pointer;
+}
+.card .info button:hover {
+  background-color: var(--Soft-Magenta);
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+.social i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 1.8;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.social i:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+  main {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .card {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .card .image {
+    width: 100%;
+  }
+  .card .info {
+    width: 100%;
+    text-align: center;
+  }
+  .card .info button {
+    padding: 12px 60px;
+  }
+  .social {
+    justify-content: center;
+  }
+}
